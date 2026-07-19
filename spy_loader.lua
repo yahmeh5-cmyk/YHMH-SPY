@@ -62,6 +62,9 @@ load("spy_export.lua")
 load("spy_economy.lua")
 load("spy_npc.lua")
 load("spy_args.lua")
+load("spy_schema.lua")
+
+
 
 print("[SPY] ============================")
 print("[SPY] YHMH SPY v2.0 LOADED!")
