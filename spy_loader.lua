@@ -1,10 +1,9 @@
 -- YHMH SPY — Loader
--- Execute com:
--- loadstring(game:HttpGet("https://github.com/yahmeh5-cmyk/YHMH-SPY/new/main"))()
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/yahmeh5-cmyk/YHMH-SPY/main/spy_loader.lua"))()
 
 repeat task.wait() until game:IsLoaded() and game:GetService("Players").LocalPlayer
 
-local BASE = "https://raw.githubusercontent.com/yahmeh5-cmyk/YHMHHUB/main/"
+local BASE = "https://raw.githubusercontent.com/yahmeh5-cmyk/YHMH-SPY/main/"
 
 if not getgenv then
     getgenv = function() return _G end
