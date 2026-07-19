@@ -1,4 +1,5 @@
--- YHMH SPY — Loader
+-- YHMH SPY v2.0 — Loader
+-- 8 modulos: gui, remotes, mapper, export, economy, npc, args
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/yahmeh5-cmyk/YHMH-SPY/main/spy_loader.lua"))()
 
 repeat task.wait() until game:IsLoaded() and game:GetService("Players").LocalPlayer
@@ -14,10 +15,13 @@ getgenv().SPY = {
     remotes = {},
     remoteCounts = {},
     mapData = {},
+    currencies = {},
+    econRemotes = {},
     paused = false,
     filter = "",
     maxLog = 500,
     output = {},
+    ON = {},
 }
 
 local function load(name)
@@ -44,14 +48,22 @@ local function load(name)
 end
 
 print("[SPY] ============================")
-print("[SPY] YHMH SPY v1.0")
+print("[SPY] YHMH SPY v2.0")
+print("[SPY] 8 modules loading...")
 print("[SPY] ============================")
 
+-- Modulos originais
 load("spy_gui.lua")
 load("spy_remotes.lua")
 load("spy_mapper.lua")
 load("spy_export.lua")
 
+-- Novos modulos v2
+load("spy_economy.lua")
+load("spy_npc.lua")
+load("spy_args.lua")
+
 print("[SPY] ============================")
-print("[SPY] Spy carregado! Toque SP")
+print("[SPY] YHMH SPY v2.0 LOADED!")
+print("[SPY] 8 modules | Toque SP")
 print("[SPY] ============================")
